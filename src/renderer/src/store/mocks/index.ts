@@ -1,28 +1,30 @@
 import { NoteInfo } from '@shared/models'
 
+const time = new Date().getTime()
+
 export const NotesMocks: NoteInfo[] = [
   {
     title: 'First notes',
-    lastEditTime: new Date().getTime()
+    lastEditTime: time + 1
   },
   {
     title: 'Second notes',
-    lastEditTime: new Date().getTime()
+    lastEditTime: time + 2
   },
   {
     title: 'Third notes',
-    lastEditTime: new Date().getTime()
+    lastEditTime: time + 3
   },
   {
     title: 'Fourth notes',
-    lastEditTime: new Date().getTime()
+    lastEditTime: time + 4
   },
   {
     title: 'Fifth notes',
-    lastEditTime: new Date().getTime()
+    lastEditTime: time + 5
   },
   {
     title: 'Sixth notes',
-    lastEditTime: new Date().getTime()
+    lastEditTime: time + 6
   }
 ]
