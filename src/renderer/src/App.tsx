@@ -2,10 +2,11 @@ import {
   ActionButtonRow,
   Content,
   DraggableTopBar,
+  MarkDownEditor,
   NotePreviewList,
   RootLayout,
   SideBar
-} from './components'
+} from '@/components'
 
 function App(): JSX.Element {
   return (
@@ -16,7 +17,9 @@ function App(): JSX.Element {
           <ActionButtonRow className="flex justify-between mt-1" />
           <NotePreviewList className="mt-3 space-y-1" />
         </SideBar>
-        <Content className="border-l bg-zinc-900/50 border-l-white/20">Content</Content>
+        <Content className="border-l bg-zinc-900/50 border-l-white/20">
+          <MarkDownEditor />
+        </Content>
       </RootLayout>
     </>
   )
