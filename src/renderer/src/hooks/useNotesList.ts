@@ -2,7 +2,7 @@ import { notesAtom, selectedNoteIndexAtom } from '@/store'
 import { useAtom, useAtomValue } from 'jotai'
 
 export const useNotesList = (onSelect?: () => void) => {
-  const notes = useAtomValue(notesAtom)
+  const notes = useAtomValue(notesAtom) ?? []
 
   const [selectedNoteIndex, setSelectedNoteIndex] = useAtom(selectedNoteIndexAtom)
 
